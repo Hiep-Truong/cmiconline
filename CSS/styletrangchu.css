@@ -1,0 +1,145 @@
+h4  {
+    margin-block-start: 15px;
+    margin-block-end: 10px;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
+}
+
+p {
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+.title {
+    margin: 0 12px;
+    color: #13285f;
+    border-bottom: 4.5px solid #13285f;
+    border-radius: 2px;
+    text-align: left;
+
+}
+
+.title_heading>h2>i {
+    text-decoration: underline;
+    /* text-decoration-style: solid; */
+    /* text-decoration-color: #13285f; */
+}
+
+.cards {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card_img {
+    width: 70%;
+    border: 1px solid #242a39;
+}
+
+.card {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 22.4%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.card_item:hover {
+    box-shadow: 3px 8px 3px grey;
+    cursor: pointer;
+    border-radius: 6px;
+    border-bottom: 3px solid #beb5b5;
+
+}
+
+.card_item {
+    background-color: rgba(245, 244, 244, 0.849);
+    position: relative;
+    padding-top: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: #242a39;
+    align-items: center;
+    text-align: center;
+}
+
+.card .card_hot {
+    position: absolute;
+    top: -4.8%;
+    right: -8%;
+}
+
+.card .card_full {
+    position: absolute;
+    top: -4.5%;
+    right: -5%;
+}
+
+.under_card {
+    /* border: 1px solid #ccc; */
+    padding-top: 10px;
+    display: flex;
+    justify-content:space-between;
+    background-color: rgba(245, 244, 244, 0.849);
+
+}
+
+.btn {
+    margin: 5px 20px;
+    max-width:120px;
+    display: flex;
+    justify-content: right;
+    padding-bottom: 5px;
+
+}
+
+.btn_add {
+    cursor: pointer;
+    background-color: #009999;
+    color: white;
+    border-radius: 1px;
+
+}
+/* .price{
+    margin: 5px 5px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px; 
+    bottom: 0px; 
+} */
+/* .price-real{
+    color: red;
+} */
+.add{
+    text-decoration: none;
+    color: #fff;
+}
+.reading{
+    cursor: pointer;
+    background-color: #009999;
+    color: white;
+    border-radius: 1px;
+
+}
+.under_card:hover{
+    box-shadow: 12px 12px 20px grey;
+    cursor: pointer;
+    border-radius: 6px;
+    border-top: 1px solid #beb5b5;
+}
+.btn_add:hover{
+    box-shadow: 8px 3px 5px #947f7f;
+    cursor: pointer;
+    background-color:#9E7A41 ;
+    border: 1px solid #beb5b5;
+}
+.reading:hover{
+    box-shadow: 8px 3px 5px #947f7f;
+    cursor: pointer;
+    background-color:#9E7A41 ;
+    border: 1px solid #beb5b5;
+}

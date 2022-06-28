@@ -1,0 +1,398 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 980px;
+  position: relative;
+}
+#container > .heading .top_right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding-left: 30px;
+  padding-right: 20px;
+  border-bottom-left-radius: 20px;
+  min-height: 30px;
+  /* display: flex; */
+  background-color: #9e7a41;
+  /* justify-content: center; */
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container > .heading .top_right a {
+  line-height: 40px;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  font-variant: small-caps;
+  text-decoration: none;
+  letter-spacing: 1.2px;
+}
+
+#container > .heading .top_right a:hover {
+  color: #6c4929;
+}
+
+/*slideshow*/
+/* .slide{
+                        position: relative;
+                        max-width: 1200px;
+                    } */
+.slideshow-container {
+  max-width: 1200px;
+  /* position: absolute; */
+  /* position: relative; */
+  margin: auto;
+}
+/* Ẩn các slider */
+.mySlides {
+  display: none;
+}
+/* Định dạng nội dung Caption */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* định dạng các chấm chuyển đổi các slide */
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* khi được hover, active đổi màu nền */
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Thêm hiệu ứng khi chuyển đổi các slide */
+/* .fade {
+                        -webkit-animation-name: fade;
+                        -webkit-animation-duration: 3s;
+                        animation-name: fade;
+                        animation-duration: 3s;
+                      }
+                       
+                      @-webkit-keyframes fade {
+                        from {opacity: .4} 
+                        to {opacity: 1}
+                      }
+                       
+                      @keyframes fade {
+                        from {opacity: .4} 
+                        to {opacity: 1}
+                      } */
+
+/* .banner {
+                        height: 660px;
+                        object-fit: cover;
+                        background-image: url('./img/banner_daupha\ \(1\).jpg');
+                        background-size: 100% auto;
+                        background-repeat: no-repeat;
+
+                    } */
+
+.title {
+  display: flex;
+  width: 120px;
+}
+
+/*Nav*/
+#menu {
+  border: 8px solid #3c4985;
+  /* position: fixed; */
+  top: 0px;
+}
+
+#menu > section > div > ul > li {
+  display: inline-block;
+  position: relative;
+}
+
+#menu > section > div > ul > li > a {
+  display: block;
+}
+
+#menu > section > div > ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 4px;
+  margin: 0px;
+  list-style: none;
+  background-color: #13285f;
+  font-size: 20px;
+}
+
+#menu > section > div > ul > li > a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+  line-height: 40px;
+  display: block;
+}
+
+#menu > section > div > ul ul {
+  position: absolute;
+  display: none;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  border-radius: 3px;
+  width: max-content;
+  background-color: #636d9d;
+  box-shadow: 0 0 1px gray;
+}
+
+#menu > section > div > ul > li:hover > ul {
+  display: block;
+}
+
+#menu > section > div > ul ul a {
+  display: block;
+  line-height: 30px;
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  padding: 0 10px;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+#menu > section > div > ul a:hover {
+  background-color: #3c4985;
+  border-radius: 3px;
+}
+
+#menu > section > div > ul ul a:hover {
+  background-color: lightslategray;
+  color: white;
+}
+
+/**/
+#logo {
+  max-width: 50px;
+  height: auto;
+  margin-right: 80px;
+}
+
+/*                     
+                    #menu {
+                        color: #fffff5;
+                        list-style: none;
+                        display: flex;
+                        justify-content: space-around;
+                        background-color: #13285F;
+                        align-items: center;
+                    }
+                    
+                    #menu a {
+                        float: left;
+                        display: block;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                        color: #fffff5;
+                        font-weight: 700;
+                    }
+                    
+                    #menu li {
+                        position: relative;
+                    }
+                    
+                    #menu li a {
+                        color: #f8f8f8;
+                        display: block;
+                        padding: 18px 20px;
+                        text-decoration: none;
+                    }
+                    
+                    #menu ul.sub_menu {
+                        position: absolute;
+                        background-color: #2c478d;
+                        list-style: none;
+                        display: none;
+                        padding: 0;
+                        margin-right: 120px;
+                    }
+                    
+                    #menu li:hover {
+                        background-color: #3C4985;
+                        color: #fff;
+                    }
+                    
+                    #menu:hover .sub_menu {
+                        display: block;
+                    }
+                    
+                    #menu li ul:hover {
+                        background-color: #2c478d;
+                        color: #2c478d;
+                    } */
+#menu .looking_nav {
+  padding: auto;
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#menu .search {
+  /* padding: 6px; */
+  margin-bottom: 12px;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+#menu button[type="submit"] {
+  margin-top: 7px;
+}
+
+#menu.search button {
+  background: #ddd;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit_icon {
+  color: #fff;
+  font-size: 15px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+}
+
+.submit_icon:hover {
+  cursor: pointer;
+}
+
+#menu .search .submit_icon:hover {
+  background: #ccc;
+}
+
+/**/
+.content_iframe {
+  min-height: 600px;
+  width: 100%;
+  background: white;
+  float: left;
+}
+
+/*footer*/
+#info {
+  clear: both;
+  display: flex;
+  /* position: fixed; */
+  background-color: #13285f;
+  color: #fffff5;
+  font-weight: 400px;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 60px;
+}
+
+.info_left {
+  width: 40%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.info_right {
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  border-left: 0.5px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.all_tags {
+  display: flex;
+}
+
+.tags {
+  border: 0.75px solid #fffff5;
+  border-radius: 3px;
+  list-style: none;
+}
+
+.tags a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.manual {
+  min-width: 120px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  /* flex-direction: row; */
+  justify-content: space-around;
+}
+
+.contact a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  margin: 18px 16px;
+}
+
+.end {
+  padding-top: 5px;
+  text-align: center;
+  margin: 0 auto;
+  color: black;
+}
+.tag_item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
+    margin: 0 15px; 
+}
+
+.btn_tag_item {
+    border: none;
+  border-radius: 5px;
+  background-color: #fffff5;
+  font-family:Arial, Helvetica, sans-serif;
+  box-shadow: 3px 1px 1px #ccc;
+  color: #13285f;
+  line-height: 24px;
+  /* transition: width 2s height 1s transform 1s box-shadow 1s; */
+}
+
+.btn_tag_item:hover{
+    cursor: pointer;
+    /* width: 5%; */
+    /* height: 15%; */
+    /* background-color: #13285f; */
+    /* color: #fffff5; */
+
+}

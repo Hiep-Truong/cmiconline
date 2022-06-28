@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../CSS/dangky.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="for">
+      <div class="img-bg">
+        <img src="../img/banner_daupha (1).jpg" alt="Hình Ảnh Minh Họa" />
+      </div>
+      <!-- <h1>Đăng Ký</h1>
+      <div class="input-box">
+        <i></i>
+        <h4>Tạo tên đăng nhập</h4>
+        <input type="text" placeholder="Tạo username" />
+
+        <i></i>
+        <input type="password" placeholder="Tạo mật khẩu" />
+
+        <i></i>
+        <input type="password" placeholder="Email" />
+      </div> -->
+      <h1>Đăng Ký</h1>
+      <form class="input-accout" action="" method="post" name="form1" onsubmit=" return validateform()">
+        <div class="form-group">
+          <label  style="font-size:18px;">Tên đăng nhập:</label><br />
+          <input id="user" name="user" tye="text" class="form-control" />
+          <!-- <input type="text" placeholder="Nhập username"> -->
+      </div>
+      <div class="form-group">
+          <label style="font-size:18px;">Mật khẩu:</label><br />
+          <input id="password" name="password" tye="text" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label style="font-size:18px;">Xác nhận mật khẩu:</label><br />
+        <input id="check" name="check" tye="text" class="form-control" />
+    </div>
+      <div class="form-group">
+          <label style="font-size:18px;">Email:</label><br />
+          <input id="email" name="email" tye="text" class="form-control" />
+      </div> 
+      <div class="btn-box">
+        <input class="button" type="submit" value="Đăng Ký">
+    </div>
+      </form>
+      
+    </section>
+    <script>
+      function validateform() {
+      var user = document.form1.user.value;
+      var password = document.form1.password.value;
+      var check = document.form1.check.value;
+      var email = document.form1.email.value;
+      if (user == null || user == "") {
+      alert("Tên đăng nhập không được để trống!");
+      return false;
+      } else if (password.length < 6) {
+      alert("Mật khẩu ít nhất 6 ký tự");
+      return false;
+      }else if(check != password || check == null || check == ""){
+          alert("Mật khẩu vừa nhập khác mật khẩu ban đầu");
+          return false;
+      }else if(email == null){alert("Email không phù hợp");
+            return false;
+        }else{
+            alert("Đăng Ký thành công");
+            return false;
+        }
+        }
+        </script>
+  </body>
+</html>
