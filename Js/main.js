@@ -20,7 +20,7 @@ var slideIndex;
         slideIndex = 0
       }    
       //tự động chuyển đổi slide sau 3s
-      setTimeout(showSlides, 4500);
+      setTimeout(showSlides, 6000);
   }
   //mặc định hiển thị slide đầu tiên 
   showSlides(slideIndex = 0);
